@@ -10,7 +10,7 @@
         position: relative;
     }
         .footer {
-        position: fixed;    
+       
         bottom: 0;
         width: 100%;
         background-color: #222;
@@ -24,8 +24,8 @@
     <div class="content">
     
         {% block content %}
+        {% include 'home.html' %}
 
-        <h1>This is home page</h1>
 
         {% endblock content %}
 

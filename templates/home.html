@@ -1,15 +1,151 @@
-{% extends 'index.html' %}
-
+{% load static %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar Photovoltaic Solutions</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+    }
+
+    .services {
+      padding: 60px 30px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #f57f17;
+    }
+
+    .service-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      background-color: #f57f17;
+      color: white;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      padding: 12px 30px;
+      background-color: white;
+      color: #f57f17;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>This is home page</h1>
+
+  <!-- Bootstrap Carousel Start -->
+  <div id="solarCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/carousel1.png' %}" class="d-block w-100" alt="Solar Panel 1" style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>Powering a Greener Tomorrow</h1>
+          <p>with Solar Photovoltaic Solutions</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/carousel2.png' %}" class="d-block w-100" alt="Solar Panel 2" style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>Clean Energy for Your Home</h1>
+          <p>Residential and commercial installations</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/carousel5.png' %}" class="d-block w-100" alt="Solar Panel 2" style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>Solar Manufacturing at Scale</h1>
+    <p>High-efficiency solar panel production by Emmvee</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/carousel3.png' %}" class="d-block w-100" alt="Solar Panel 3" style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>Reliable Solar Maintenance</h1>
+          <p>Support services to ensure peak performance</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#solarCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#solarCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <!-- Bootstrap Carousel End -->
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-items">
+      <div class="card">
+        <h3>Residential Solar</h3>
+        <p>Save energy and costs by installing efficient solar systems at your home.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Installations</h3>
+        <p>Custom solar energy solutions for your business to reduce your carbon footprint.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance & Support</h3>
+        <p>Reliable post-installation services to ensure your system works flawlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to switch to solar?</h2>
+    <button>Get a Free Quote</button>
+  </section>
+
+  <footer>
+    &copy; 2025 SolarPV Solutions. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 {% endblock content %}
