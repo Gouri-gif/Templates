@@ -7,7 +7,14 @@
     <style>
         .content {
         padding-top: 100px;
+        position: relative;
     }
+        .footer {
+        position: fixed;    
+        bottom: 0;
+        width: 100%;
+        background-color: #222;
+        }
 </style>
 
     
@@ -21,10 +28,21 @@
         <h1>This is home page</h1>
 
         {% endblock content %}
+
+        
+
+        
+    </div>
+    <div class="footer">
+        {% include "footer.html" %}
+        
     </div>
 
-    {% block scripts %}
-    {% endblock %}
+
+
+
+    
+
 
 </body>
 </html>
