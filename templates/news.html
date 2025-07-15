@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: rgb(255, 169, 8);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .news-item {
+      background-color: #fff;
+      border-left: 5px solid rgb(255, 169, 8);
+      border-radius: 5px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .news-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .news-title {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .news-link {
+      text-decoration: none;
+      color: rgb(255, 169, 8);
+      font-weight: 600;
+    }
+
+    .news-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Latest News</h2>
+
+    <div class="news-item">
+      <div class="news-date">June 24, 2025</div>
+      <div class="news-title">Emmvee secures INR 1500 Cr from KPI Green Energy for solar project in Gujarat</div>
+      <a href="#" class="news-link">Read More</a>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 29, 2025</div>
+      <div class="news-title">Emmvee expands solar module capacity to 6.6 GW</div>
+      <a href="#" class="news-link">Read More</a>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">July 18, 2024</div>
+      <div class="news-title">Emmvee Group inks tolling agreement with Hero Future Energies (600 MWp)</div>
+      <a href="#" class="news-link">Read More</a>
+    </div>
+  </div>
+
+</body>
+</html>
