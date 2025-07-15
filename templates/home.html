@@ -1,5 +1,6 @@
+
 {% load static %}
-{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +73,13 @@
       padding: 20px;
       font-size: 0.9rem;
     }
+    .carousel-caption p {
+  color: red !important;
+  
+}
+
+    
+    
   </style>
 </head>
 <body>
@@ -83,28 +91,28 @@
         <img src="{% static 'images/carousel1.png' %}" class="d-block w-100" alt="Solar Panel 1" style="height: 90vh; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
           <h1>Powering a Greener Tomorrow</h1>
-          <p>with Solar Photovoltaic Solutions</p>
+          <p><b>with Solar Photovoltaic Solutions</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="{% static 'images/carousel2.png' %}" class="d-block w-100" alt="Solar Panel 2" style="height: 90vh; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
           <h1>Clean Energy for Your Home</h1>
-          <p>Residential and commercial installations</p>
+          <p><b>Residential and commercial installations</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="{% static 'images/carousel5.png' %}" class="d-block w-100" alt="Solar Panel 2" style="height: 90vh; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
           <h1>Solar Manufacturing at Scale</h1>
-    <p>High-efficiency solar panel production by Emmvee</p>
+    <p><b>High-efficiency solar panel production by Emmvee</bp>
         </div>
       </div>
       <div class="carousel-item">
         <img src="{% static 'images/carousel3.png' %}" class="d-block w-100" alt="Solar Panel 3" style="height: 90vh; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
           <h1>Reliable Solar Maintenance</h1>
-          <p>Support services to ensure peak performance</p>
+          <p><b>Support services to ensure peak performance</b></p>
         </div>
       </div>
     </div>
@@ -115,9 +123,14 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
+  <!-- Bootstrap 5 JS with Popper (required for carousel and dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
   <!-- Bootstrap Carousel End -->
 
-  <section class="services">
+  {% comment %} <section class="services">
     <h2>Our Services</h2>
     <div class="service-items">
       <div class="card">
@@ -147,5 +160,4 @@
   <!-- Bootstrap JS (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-{% endblock content %}
+</html> {% endcomment %}

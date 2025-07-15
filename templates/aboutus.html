@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - SolarPV</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgb(255, 169, 8);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
+      padding: 20px 40px;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    ul.nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    ul.nav-links li a:hover {
+      color: black;
+    }
+
+    /* Content Section */
+    section {
+      scroll-margin-top: 100px;
+      padding: 120px 20px 60px;
+    }
+
+    .about-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      background-color: #fff;
+      padding: 60px 20px;
+      border-radius: 10px;
+    }
+
+    .about-wrapper h2 {
+      font-size: 2.5rem;
+      color: #f57f17;
+      margin-bottom: 20px;
+    }
+
+    .about-wrapper p.description {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 50px;
+      line-height: 1.6;
+    }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .about-card {
+      background-color: #fff3e0;
+      border-left: 5px solid #f57f17;
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .about-card h3 {
+      color: #f57f17;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .about-card p {
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .about-wrapper h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-wrapper">
+      <h2>About Us</h2>
+      <p class="description">
+        At <strong>SolarPV Solutions</strong>, we provide cutting-edge solar photovoltaic systems for residential, commercial, and industrial applications. Our mission is to drive global energy transformation through sustainable and affordable solar technologies.
+      </p>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <h3><i class="fas fa-sun"></i> Our Vision</h3>
+          <p>
+            To become a global leader in clean energy by making solar power accessible and efficient for all.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+          <p>
+            Deliver reliable solar solutions that help reduce carbon emissions, lower energy bills, and create a better future.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3><i class="fas fa-handshake"></i> Our Values</h3>
+          <p>
+            We value integrity, innovation, and customer commitment. Sustainability and trust guide our every decision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

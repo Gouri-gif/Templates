@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Profile</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 120px auto 60px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content-wrapper h2 {
+      color: #f57f17;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+   
+
+  </style>
+</head>
+<body>
+
+  
+  <div class="content-wrapper" id="company-profile">
+    <h2>Company Profile</h2>
+    <img src="{% static 'images/emmvee.jpg' %}" alt="Company Image" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 20px;">
+    <p class="company-intro">
+      Founded in 1992 and headquartered in Bengaluru, Emmvee
